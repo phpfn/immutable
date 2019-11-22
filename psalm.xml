@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<psalm
+    useDocblockTypes="true"
+    allowPhpStormGenerics="true"
+    findUnusedVariablesAndParams="true"
+    ensureArrayStringOffsetsExist="true"
+    totallyTyped="true"
+    strictBinaryOperands="true"
+    requireVoidReturnType="true"
+    useAssertForType="true"
+>
+    <projectFiles>
+        <directory name="src" />
+        <directory name="tests" />
+    </projectFiles>
+
+    <issueHandlers>
+        <!-- Causes false positives when props installing through arrays -->
+        <PropertyNotSetInConstructor errorLevel="suppress" />
+
+        <!-- Is a valid definition in LSP: https://en.wikipedia.org/wiki/Liskov_substitution_principle -->
+        <MoreSpecificReturnType errorLevel="suppress" />
+
+        <!-- May cause false positives when used with invariants -->
+        <RedundantConditionGivenDocblockType errorLevel="suppress" />
+    </issueHandlers>
+</psalm>
