@@ -1,6 +1,6 @@
 {
     "name": "serafim/immutable",
-    "description": "",
+    "description": "Simple helper to ensure immutable objects",
     "license": "MIT",
     "keywords": [
         "immutable",
