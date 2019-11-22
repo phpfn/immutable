@@ -5,7 +5,8 @@
     "keywords": [
         "immutable",
         "stateless",
-        "functional"
+        "functional",
+        "sugar"
     ],
     "homepage": "https://github.com/SerafimArts/Immutable",
     "support": {
